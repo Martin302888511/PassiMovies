@@ -1,0 +1,67 @@
+.contact-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgba(60, 60, 60, 0.3);
+  gap: 2em;
+  border-radius: 10px;
+  padding: 2em;
+  place-items: center;
+  min-width: 60dvw;
+}
+.mail {
+  color: var(--beta-color);
+  font-size: 1.5em;
+  display: inline-block;
+}
+.email {
+  color: var(--beta-color);
+  font-size: 1em;
+  display: inline-block;
+}
+.input-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+}
+.info-field {
+  border: none;
+  font-family: Raleway, sanserif;
+  padding: 0.45em 0.6em 0.45em 1em;
+  border-radius: 1em;
+  width: 18em;
+}
+.input-bericht {
+  border: none;
+  font-family: Raleway, sanserif;
+  padding: 0.45em 0.6em 0.45em 1em;
+  border-radius: 10px;
+  height: 8em;
+}
+.verzend-btn {
+  text-align: center;
+  font-family: Raleway,sans-serif;
+  font-size: 1em;
+  color: var(--text-color);
+  border: none;
+  border-radius: 10em;
+  padding: 0.45em 0.6em .7em 1em;
+  background-color: var(--beta-color);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0px;
+  transition: box-shadow 0.15s;
+}
+.verzend-btn:hover {
+  opacity: .8;
+}
+.contact-txt {
+  margin-bottom: 25%;
+  font-size: 1.1em;
+}
+.share-icons, ul, img {
+  display: flex;
+  list-style: none;
+  width: 1.5em;
+  gap: .45em;
+}
