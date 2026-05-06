@@ -1,3 +1,4 @@
+/*/////////// contact styles////////// */
 .contact-sec {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,16 +9,6 @@
   padding: 2em;
   place-items: center;
   min-width: 60dvw;
-}
-.mail {
-  color: var(--beta-color);
-  font-size: 1.5em;
-  display: inline-block;
-}
-.email {
-  color: var(--beta-color);
-  font-size: 1em;
-  display: inline-block;
 }
 .input-sec {
   display: flex;
@@ -54,6 +45,16 @@
 }
 .verzend-btn:hover {
   opacity: .8;
+}
+.mail {
+  color: var(--beta-color);
+  font-size: 1.5em;
+  display: inline-block;
+}
+.email {
+  color: var(--beta-color);
+  font-size: 1em;
+  display: inline-block;
 }
 .contact-txt {
   margin-bottom: 25%;

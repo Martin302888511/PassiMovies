@@ -1,8 +1,12 @@
+/*/////////// movie styles////////// */
 :root {
   --alpha-color: #880d1e;
   --beta-color: #de2c2c;
   --gamma-color: #0d0d0d;
   --text-color: rgb(233, 224, 224);
+}
+.main-movie{
+  gap: 2em;
 }
 .movie-carousel {
   display: flex;
@@ -10,67 +14,31 @@
   gap: .8em;
   max-width: clamp(200px,50dvw,88dvw);
   justify-content: start;
-  overflow-x: auto;
+  overflow-x: scroll;
   scroll-behavior: smooth;
-  anchor-name: --movie-carousel;
   scroll-snap-align: x mandatory;
-  scroll-marker-group: after;
-}
-.movie-carousel::scroll-marker-group {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  gap: .5em;
-}
-.movie-card::scroll-marker {
-  content:' ';
-  font-family: 'Courier New', Courier, monospace;
-  text-decoration: none;
-  color: var(--alpha-color);
-  border: .4em solid var(--alpha-color);
-  border-radius: 50%;
-  position: relative;
-}
-.movie-titel {
-  position: absolute;
-}
-.movie-card::scroll-marker:target-current {
-  opacity: .4;
 }
 .movie-card {
   scroll-snap-align: start;
   align-content: center;
+  padding-bottom: 1em;
 }
-.movie-carousel::-webkit-scrollbar {
-  display: none;
+.movie-titel {
+  position: absolute;
 }
-.movie-carousel::scroll-button(right),.movie-carousel::scroll-button(left) {
-  content:'\2771';
-  background-color:transparent;
-  color: var(--alpha-color);
-  font-size: 5em;
-  height: .7em;
-  width: .5em;
-  border: 2px solid var(--beta-color);
+/*/////////// scrollbar styles////////// */
+::-webkit-scrollbar{
+  height: .6em;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(60, 60, 60, 0.3);
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--beta-color);
+  border-radius: 2em;
   cursor: pointer;
-  position: fixed;
-  position-anchor: --movie-carousel;
-  position-area: right center;
-  text-align: center;
-  border: none;
 }
-.movie-carousel::scroll-button(left) {
-  content:'\2770';
-  position-area: left center;
-  padding: 0em 0.1em 0.15em 0em;
-}
-
-.movie-carousel::scroll-button(right):disabled, .movie-carousel::scroll-button(left):disabled {
-  opacity: .5;
-  cursor: auto;
-}
-.main-movie{
-  gap: 2em;
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(222, 44, 44, 0.5);
 }
